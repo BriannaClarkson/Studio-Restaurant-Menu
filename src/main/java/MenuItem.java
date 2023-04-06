@@ -13,6 +13,8 @@ public class MenuItem {
         this.isNew = false;
     }
 
+    //changing
+
     public MenuItem(String name, String description, Double price, String category, Boolean isNew){
         this.name = name;
         this.description = description;
