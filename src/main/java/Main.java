@@ -17,6 +17,6 @@ public class Main {
         myMenu.addMenuItem(item4);
         myMenu.removeMenuItem(item1);
         System.out.println(myMenu.toString());
-//        System.out.println(item1.tostring());
+//        System.out.println(item1.toString());
     }
 }

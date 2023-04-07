@@ -18,6 +18,12 @@ public class  Menu {
     public void setLastUpdated(Date lastUpdated) { this.lastUpdated = lastUpdated; }
 
     public void addMenuItem(MenuItem item){
+        for (MenuItem menuItem : this.menuItems){
+            if (item.equals(menuItem)){
+                System.out.println("Warning! Added duplicate menu item.");
+                return;
+            }
+        }
         this.menuItems.add(item);
         this.lastUpdated = new Date();
     }
