@@ -5,13 +5,13 @@ public class MenuItem {
     private String category;
     private Boolean isNew;
 
-    public MenuItem(String name, String description, Double price){
-        this.name = name;
-        this.description = description;
-        this.price = price;
-        this.category = "Not Categorized";
-        this.isNew = false;
-    }
+//    public MenuItem(String name, String description, Double price){
+//        this.name = name;
+//        this.description = description;
+//        this.price = price;
+//        this.category = "Not Categorized";
+//        this.isNew = false;
+//    }
 
     //changing
 
@@ -64,7 +64,10 @@ public class MenuItem {
 
         MenuItem menuItem = (MenuItem) obj;
 
-        if (menuItem.name.equals(this.name) && menuItem.description.equals(this.description) && menuItem.price.equals(this.price) && menuItem.category.equals(this.category)) return true;
+        if (menuItem.name.equals(this.name)
+                && menuItem.description.equals(this.description)
+                && menuItem.price.equals(this.price)
+                && menuItem.category.equals(this.category)) return true;
 
         else return false;
 
